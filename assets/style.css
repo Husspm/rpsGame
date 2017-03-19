@@ -1,0 +1,50 @@
+body {
+    background-image: url("photos/bglayer.png");
+    background-size: 50px;
+    background-color: #333;
+}
+
+.headline,
+.results {
+    background-image: url("photos/bglayer.png");
+    background-size: 30px;
+}
+
+.headline,
+.selectors,
+.results {
+    border: solid 10px #111;
+    border-radius: 40px;
+}
+
+.selectors:hover {
+    background-image: url("photos/bglayer.png");
+    background-size: contain;
+}
+
+.headline {
+    margin: 30px auto;
+    text-align: center;
+    background-color: #999;
+}
+
+img {
+    width: 30%;
+}
+
+.selectors {
+    position: relative;
+    padding: 20px 30px;
+    background-color: #999;
+}
+
+.results {
+    margin: 90px auto;
+    background-color: #999;
+    text-align: center;
+    width: 80%;
+}
+
+form {
+    margin: 10px auto;
+}

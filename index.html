@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <!--setting viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <!--link to bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--link to external css-->
+    <link id="style-change" rel="stylesheet" href="assets/style.css">
+    <!--link to page logo
+    <link rel="icon" href="logo.png">-->
+    <title>Rock, Paper, Scissor</title>
+
+</head>
+
+<body>
+    <div class="container headline">
+        <h1>Rock, Paper, Scissors...for 2...hopefully</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-push-1 selectors">
+                <button value="p1" id="p1change" class="hide">Pick a new player</button>
+                <form class="p1form">
+                    <input id="p1input" type="text" placeholder="Enter player one name">
+                    <button value="p1" type="submit">Enter</button>
+                </form>
+                <h2 class="userp1">Player 1 needs a name</h2>
+                <img class="p1 hide" data-value="0" src="assets/photos/rock.png">
+                <img class="p1 hide" data-value="1" src="assets/photos/paper.png">
+                <img class="p1 hide" data-value="2" src="assets/photos/scissors.png">
+            </div>
+            <div class="col-md-4 col-md-push-3 selectors">
+                <button value="p2" id="p2change" class="hide">Pick a new player</button>
+                <form class="p2form">
+                    <input id="p2input" type="text" placeholder="Enter player two name">
+                    <button value="p2" type="submit">Enter</button>
+                </form>
+                <h2 class="userp2">Player 2 needs a name</h2>
+                <img class="p2 hide" data-value="0" src="assets/photos/rock.png">
+                <img class="p2 hide" data-value="1" src="assets/photos/paper.png">
+                <img class="p2 hide" data-value="2" src="assets/photos/scissors.png">
+            </div>
+        </div>
+        <!--ends headline div-->
+        <div class="container results">
+            <div class="chatbox">
+            </div>
+            <h1 id="display">Pick a name to get started</h1>
+            <h2 id="print"></h2>
+            <!--link to firebase-->
+            <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+            <!--link to jQuery-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <!--Link to external js-->
+            <script src="assets/logic.js"></script>
+</body>
